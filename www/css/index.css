@@ -1,0 +1,163 @@
+
+html,body{
+    background-color: #e08484;
+    backface-visibility: hidden;
+}
+h2{
+    text-align: center;
+    text-decoration: underline;
+    text-shadow: 3rem;
+    font-family: fantasy;
+    text-decoration-color: chocolate;
+    color: firebrick;
+    font-style: normal;
+}
+
+h3{
+    font-size-adjust: auto;
+    font-variant-numeric: normal;
+}
+
+[data-role="nav"] {
+    position: absolute;
+    z-index: 30;
+    bottom: 0;
+    width: 100%;
+    height: 3rem;
+    background-color: #7FADFF;
+    border: 14px;
+    border-radius: 3px;
+    border-color: #381F4B
+}
+
+.results, a: hover{
+    color: bisque;
+    
+}
+.tabs {
+    list-style: none;
+}
+
+.tabs li {
+    float: left;
+    width: 50%;
+}
+
+#refreshButton {
+    z-index: 30;
+    position: relative;
+    float: right;
+/*    width: 10%;*/
+    border: 2px;
+    border-radius: 5px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-color: #FF5E45;
+    background-color: #0DBBFF;
+      
+}
+
+#refreshBbutton, a:hover{
+    color: beige
+}
+
+    
+/* Start 2 page display */
+/*pages are not displayed*/
+
+[data-role="page"] {
+    width: 80%;
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    z-index: 10;
+    padding-bottom: 5rem;
+    /* to match the height of the nav bar */
+    padding-top: 4rem;
+    /* leaving space for the heading */
+}
+
+[data-role="page"].active {
+    display: block;
+    z-index: 20;
+    width: 100%;
+}
+
+#
+
+
+
+#homeTeamLogo {
+    float:left;
+    height: 50px;
+    width: 50px;
+}
+
+#awayTeamLogo {
+   
+    float: right;
+    height: 50px;
+    width: 50px;;
+}
+
+#homeTeamLogo>img, #awayTeamLogo>img {
+    width: 25px;
+    height: 25px;
+    margin-top: 15px;
+    vertical-align: middle;
+}
+
+.homeTeam{
+   width: 20%;
+    height: 60px;
+    display: inline-block;
+    padding-right: 20px;
+} 
+
+.awayTeam {
+    width: 20%;
+    height: 60px;
+    display: inline-block;
+    padding-left: 20px;
+    
+}
+.homeTeamScore, .awayTeamScore {
+    width: 12%;
+    height: 45px;
+    display: inline-block;
+    line-height: 60px;
+    
+}
+
+#teamStandings {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 2rem auto;
+    border: 3px;
+    border-radius: 5px;
+}
+
+#teamStandings th {
+    text-align: center;
+    text-decoration-style: solid;
+    padding: 0.5rem 0.5rem;
+    line-height: 2.5rem;
+    background-color: #7FADFF;
+    color: #000000;
+    border-bottom: solid 2px #381F4B;
+}
+#teamStandings td {
+    text-align: center;
+    padding: 0.5rem 0.5rem;
+    line-height: 2.5rem;
+    background-color: #E5A482;
+    color: #000000;
+    border-bottom: solid 2px #381F4B;
+}
+
+td>img {
+    width: 25px;
+    height: 25px;
+}
